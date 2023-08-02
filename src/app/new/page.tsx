@@ -12,7 +12,7 @@ async function createTodo(data: FormData) {
     }
 
     await prisma.todo.create({ data: { title, completion: false } })
-    redirect("/");
+    redirect("http://localhost:3000");
 }
 
 export default function page() {
